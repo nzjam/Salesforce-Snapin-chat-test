@@ -27,7 +27,45 @@
 				embedded_svc.settings.defaultMinimizedText = 'Chat with James'; //(Defaults to Chat with an Expert)
 				embedded_svc.settings.disabledMinimizedText = 'James has left the building'; //(Defaults to Agent Offline)
 				
-				
+				embedded_svc.settings.extraPrechatInfo = [{
+  "entityName": "Contact",
+  "entityFieldMaps": [{
+    "isExactMatch": true,
+    "fieldName": "FirstName",
+    "doCreate": false,
+    "doFind": true,
+    "label": "First Name"
+  }, {
+    "isExactMatch": true,
+    "fieldName": "LastName",
+    "doCreate": false,
+    "doFind": true,
+    "label": "Last Name"
+  }, {
+    "isExactMatch": true,
+    "fieldName": "Email",
+    "doCreate": false,
+    "doFind": true,
+    "label": "Email"
+  }]
+}, {
+  "entityName": "Case",
+  "entityFieldMaps": [{
+    "isExactMatch": false,
+    "fieldName": "Subject",
+    "doCreate": true,
+    "doFind": false,
+    "label": "Email"
+  }, {
+  "entityName": "Account",
+  "entityFieldMaps": [{
+    "isExactMatch": true,
+    "fieldName": "Name",
+    "doCreate": true,
+    "doFind": true,
+    "label": "LastName"
+  }]
+}];
 				
 
 				//embedded_svc.settings.loadingText = ''; //(Defaults to Loading)
