@@ -58,15 +58,10 @@
     "doCreate": true,
     "doFind": false,
     "label": "Email"
-  }, {
-    "isExactMatch": false,
-    "fieldName": "Origin",
-    "doCreate": true,
-    "doFind": false,
-    "label": "Origin"
   }]
   }, { 
   "entityName": "Account",
+  "showOnCreate": true,
   "linkToEntityName": "Case",
   "linkToEntityField": "AccountId",
   "entityFieldMaps": [{
@@ -77,26 +72,7 @@
     "label": "LastName"
   }]
 }];
-embedded_svc.settings.extraPrechatFormDetails = [{
-  "label": "Origin",
-  "value": "Web",
-  "displayToAgent": true
-}, {
-  "label": "Status",
-  "value": "Closed",
-  "displayToAgent": true
-}, {
-  "label": "Name",
-  "value": "Bob",
-  "displayToAgent": true
-}, {
-  "label": "issue",
-  "value": "Do the work",
-  "displayToAgent": true
-}, {
-  "label":"Email", 
-  "transcriptFields": ["Email__c"]
-}];
+
 				
 
 				//embedded_svc.settings.loadingText = ''; //(Defaults to Loading)
