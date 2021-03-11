@@ -46,7 +46,25 @@
 					  }],
 					  "entityName": "Contact",
 					  "linkToEntityName": ""
-				}];
+					}, {
+					    "entityName":"Case",
+					    "showOnCreate":true,
+					    "saveToTranscript":"CaseId",
+					    "entityFieldMaps": [{
+						"isExactMatch":false,
+						"fieldName":"Subject",
+						"doCreate":true,
+						"doFind":false,
+						"label":"Subject"
+					      }, {
+						"isExactMatch":false,
+						"fieldName":"SuppliedEmail",
+						"doCreate":true,
+						"doFind":false,
+						"label":"Email"
+					    }]
+					}
+				 ];
 				//embedded_svc.settings.loadingText = ''; //(Defaults to Loading)
 				//embedded_svc.settings.storageDomain = 'yourdomain.com'; //(Sets the domain for your deployment so that visitors can navigate subdomains during a chat session)
 
