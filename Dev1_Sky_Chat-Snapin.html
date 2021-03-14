@@ -24,7 +24,7 @@
 					LastName: 'Doe',
 					Email: 'james@beintelligent.nz',
 					Subject: 'Hello'}; //Sets the auto-population of pre-chat form fields
-				embedded_svc.settings.defaultMinimizedText = '1Chat with James'; //(Defaults to Chat with an Expert)
+				embedded_svc.settings.defaultMinimizedText = '2Chat with James'; //(Defaults to Chat with an Expert)
 				embedded_svc.settings.disabledMinimizedText = 'James has left the building'; //(Defaults to Agent Offline)
 				
 				embedded_svc.settings.extraPrechatInfo = [{
@@ -50,7 +50,7 @@
   }]
 }, {
   "entityName": "Case",
-  "showOnCreate": true,
+  "showOnCreate": false,
   "saveToTranscript": "CaseId",
   "entityFieldMaps": [ {
     "isExactMatch": false,
