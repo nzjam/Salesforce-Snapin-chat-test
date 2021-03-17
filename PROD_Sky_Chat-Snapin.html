@@ -59,13 +59,13 @@
 		embedded_svc.settings.entryFeature = 'LiveAgent';
 
 		embedded_svc.init(
-			'<https://skytelevisionnz.my.salesforce.com',>
-			'<https://skynetworktelevisionnz.force.com/helpcenter',>
+			'<https://skytelevisionnz.my.salesforce.com',
+			'<https://skynetworktelevisionnz.force.com/helpcenter',
 			gslbBaseURL,
 			'00D2w00000BMIEI',
 			'Support',
 			{
-				baseLiveAgentContentURL: '<https://c.la2-c2-ukb.salesforceliveagent.com/content',>
+				baseLiveAgentContentURL: '<https://c.la2-c2-ukb.salesforceliveagent.com/content',
 				deploymentId: '5722w000000QEKw',
 				buttonId: '5732w000000QGtn',
 				baseLiveAgentURL: '<https://d.la2-c2-ukb.salesforceliveagent.com/chat',>
@@ -77,13 +77,13 @@
 
 	if (!window.embedded_svc) {
 		var s = document.createElement('script');
-		s.setAttribute('src', '<https://skytelevisionnz.my.salesforce.com/embeddedservice/5.0/esw.min.js');>
+		s.setAttribute('src', '<https://skytelevisionnz.my.salesforce.com/embeddedservice/5.0/esw.min.js');
 		s.onload = function() {
 			initESW(null);
 		};
 		document.body.appendChild(s);
 	} else {
-		initESW('<https://service.force.com');>
+		initESW('<https://service.force.com');
 	}
 </script>
 	</body>
